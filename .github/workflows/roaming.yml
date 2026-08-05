@@ -19,7 +19,7 @@ concurrency:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 8
 
     steps:
       - uses: actions/checkout@v5
@@ -28,14 +28,22 @@ jobs:
         with:
           node-version: '22'
 
-      # Alleen Vodafone rendert client-side; daarvoor is een browser nodig.
-      # Faalt de installatie, dan gaat de rest gewoon door — het script
-      # markeert Vodafone dan als mislukt en behoudt de vorige gegevens.
+      # De browser wordt gecachet: de download is ruim 100 MB en kostte elke
+      # run anderhalve minuut. Na de eerste keer komt hij uit de cache.
+      - name: Browser uit de cache halen
+        id: pwcache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-chromium-1.49.1
+
+      # --with-deps is weggelaten: ubuntu-latest heeft die bibliotheken al,
+      # en die apt-stap kostte in z'n eentje bijna een minuut.
       - name: Playwright installeren
         continue-on-error: true
         run: |
-          npm install playwright@1.49.1 --no-save
-          npx playwright install --with-deps chromium
+          npm install playwright@1.49.1 --no-save --no-fund --no-audit
+          npx playwright install chromium
 
       - name: Controleren of de bestanden er zijn
         run: |
