@@ -1,0 +1,82 @@
+name: roaming-feed
+
+# Waarom dit hier draait en niet in Cloudflare: Odido, Ben en KPN weren
+# datacenter-IP's. Precies hetzelfde probleem als bij de MediaMarkt-feed.
+# Een GitHub-runner heeft een schoon IP en komt er wel door.
+
+on:
+  schedule:
+    - cron: '20 4 * * *'      # elke nacht 04:20 UTC
+  workflow_dispatch:           # en met de hand vanuit het Actions-tabblad
+
+permissions:
+  contents: write
+
+concurrency:
+  group: roaming-feed
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # Alleen Vodafone rendert client-side; daarvoor is een browser nodig.
+      # Faalt de installatie, dan gaat de rest gewoon door — het script
+      # markeert Vodafone dan als mislukt en behoudt de vorige gegevens.
+      - name: Playwright installeren
+        continue-on-error: true
+        run: |
+          npm install playwright@1.49.1 --no-save
+          npx playwright install --with-deps chromium
+
+      - name: Providers ophalen
+        id: scrape
+        run: node scrape-roaming.mjs | tee scrape.log
+
+      - name: Samenvatting in de run zetten
+        if: always()
+        run: |
+          {
+            echo '## Roaming-feed'
+            echo ''
+            echo '```'
+            cat scrape.log 2>/dev/null || echo 'geen log'
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Wijzigingen vastleggen
+        run: |
+          if git diff --quiet -- roaming.json; then
+            echo "Niets veranderd, geen commit."
+            exit 0
+          fi
+          git config user.name  "roaming-bot"
+          git config user.email "actions@github.com"
+          git add roaming.json
+          git commit -m "roaming: dekking bijgewerkt $(date -u +%Y-%m-%d)"
+          git push
+
+      # Verandert er iets bij een provider, dan wil je dat weten in plaats van
+      # het over drie maanden per ongeluk te ontdekken.
+      - name: Melden bij wijziging
+        if: success()
+        run: |
+          GEWIJZIGD=$(node -e "
+            try {
+              const d = require('./roaming.json');
+              const g = (d.samenvatting && d.samenvatting.gewijzigd) || [];
+              process.stdout.write(g.join(', '));
+            } catch (e) {}
+          ")
+          if [ -n "$GEWIJZIGD" ]; then
+            echo "::warning title=Roamingdekking gewijzigd::$GEWIJZIGD — controleer of de tabel nog klopt"
+            echo "**Gewijzigd:** $GEWIJZIGD" >> "$GITHUB_STEP_SUMMARY"
+          fi
