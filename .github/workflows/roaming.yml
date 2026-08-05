@@ -22,9 +22,9 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: '22'
 
@@ -37,9 +37,20 @@ jobs:
           npm install playwright@1.49.1 --no-save
           npx playwright install --with-deps chromium
 
+      - name: Controleren of de bestanden er zijn
+        run: |
+          test -f scrape-roaming.mjs || { echo "::error::scrape-roaming.mjs ontbreekt in de repo"; exit 1; }
+          echo "scrape-roaming.mjs gevonden ($(wc -c < scrape-roaming.mjs) bytes)"
+
       - name: Providers ophalen
         id: scrape
-        run: node scrape-roaming.mjs | tee scrape.log
+        # pipefail is essentieel: zonder dat telt alleen de exitcode van tee,
+        # en die slaagt altijd. Een crashende scraper gaf dan een groen vinkje
+        # met een lege samenvatting.
+        shell: bash
+        run: |
+          set -o pipefail
+          node scrape-roaming.mjs 2>&1 | tee scrape.log
 
       - name: Samenvatting in de run zetten
         if: always()
