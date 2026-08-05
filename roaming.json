@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-08-05T19:22:29.832Z",
+  "bijgewerkt": "2026-08-05T19:30:45.275Z",
   "bron": "scrape-roaming.mjs",
   "providers": {
     "odido": {
@@ -113,7 +113,7 @@
       "status": "ok",
       "bronType": "provider",
       "opgehaald": "2026-08-05",
-      "hash": "b717ac3142334588",
+      "hash": "35693bf7170ec8df",
       "zoneZin": "",
       "zekerheid": "laag — handmatig controleren",
       "euZoneKandidaat": [],
@@ -175,14 +175,15 @@
     "lebara": {
       "naam": "Lebara",
       "url": "https://www.lebara.nl/nl/roaming.html",
-      "status": "ok",
+      "status": "verouderd",
       "bronType": "provider",
       "opgehaald": "2026-08-05",
       "hash": "666e5ab80b7f4897",
       "zoneZin": "",
       "zekerheid": "laag — handmatig controleren",
       "euZoneKandidaat": [],
-      "uitzonderingKandidaat": []
+      "uitzonderingKandidaat": [],
+      "laatsteFout": "browser www.lebara.nl/nl/roaming.html: HTTP 403 | browser www.lebara.nl/nl/help/roaming.ht: HTTP 403"
     }
   },
   "alias": {
@@ -361,10 +362,10 @@
     "new zealand": "Nieuw-Zeeland"
   },
   "samenvatting": {
-    "gelukt": 7,
-    "mislukt": 0,
+    "gelukt": 6,
+    "mislukt": 1,
     "gewijzigd": [
-      "Lebara"
+      "Vodafone"
     ]
   }
 }
