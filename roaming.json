@@ -1,29 +1,34 @@
 {
-  "bijgewerkt": "2026-08-05T12:37:41.279Z",
+  "bijgewerkt": "2026-08-05T17:25:07.633Z",
   "bron": "scrape-roaming.mjs",
   "providers": {
     "odido": {
       "naam": "Odido",
       "url": "https://www.odido.nl/service/bellen-en-internetten-in-het-buitenland",
-      "status": "onbekend",
+      "status": "verouderd",
       "laatsteFout": "HTTP 403"
     },
     "kpn": {
       "naam": "KPN",
       "url": "https://www.kpn.com/service/mobiel/bellen-sms-en-en-internetten-in-het-buitenland.htm",
-      "status": "onbekend",
+      "status": "verouderd",
       "laatsteFout": "HTTP 404"
     },
     "vodafone": {
       "naam": "Vodafone",
       "url": "https://www.vodafone.nl/service/mobiel/bellen-en-internetten-in-het-buitenland",
-      "status": "onbekend",
-      "laatsteFout": "Cannot find package 'playwright' imported from /tmp/roaming/scrape-roaming.mjs\nDid you mean to import \"playwright/index."
+      "status": "ok",
+      "opgehaald": "2026-08-05",
+      "hash": "52a815ed9f00dd3f",
+      "zoneZin": "",
+      "inbundel": [],
+      "buitenbundel": [],
+      "landen": {}
     },
     "ben": {
       "naam": "Ben",
       "url": "https://www.ben.nl/klantenservice/bellen-en-internetten-in-het-buitenland",
-      "status": "onbekend",
+      "status": "verouderd",
       "laatsteFout": "HTTP 403"
     },
     "simyo": {
@@ -118,7 +123,7 @@
       "url": "https://www.hollandsnieuwe.nl/buitenland",
       "status": "ok",
       "opgehaald": "2026-08-05",
-      "hash": "53be9e6a6dcea905",
+      "hash": "d7acd1e235a2eed7",
       "zoneZin": "Bij het gebruik van gereguleerde roamingdiensten binnen de Europese Unie (inclusief IJsland, Liechtenstein en Noorwegen) kan de kwaliteit van de dienstverlening in een ander land verschillen van de kwaliteit van de Vodafone dienstverlening in Nederland.",
       "inbundel": [
         "Noorwegen",
@@ -150,13 +155,15 @@
     "lebara": {
       "naam": "Lebara",
       "url": "https://www.lebara.nl/nl/roaming.html",
-      "status": "onbekend",
-      "laatsteFout": "te weinig tekst (100)"
+      "status": "verouderd",
+      "laatsteFout": "HTTP 403"
     }
   },
   "samenvatting": {
-    "gelukt": 3,
-    "mislukt": 5,
-    "gewijzigd": []
+    "gelukt": 4,
+    "mislukt": 4,
+    "gewijzigd": [
+      "hollandsnieuwe"
+    ]
   }
 }
