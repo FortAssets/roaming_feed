@@ -1,12 +1,12 @@
 {
-  "bijgewerkt": "2026-08-05T17:45:05.172Z",
+  "bijgewerkt": "2026-08-05T17:50:40.627Z",
   "bron": "scrape-roaming.mjs",
   "providers": {
     "odido": {
       "naam": "Odido",
       "url": "https://www.odido.nl/service/bellen-en-internetten-in-het-buitenland",
       "status": "onbekend",
-      "laatsteFout": "browser www.odido.nl/service/bellen-en-i: Cannot find package 'playwright' imported from /tmp/roaming/scrape-roaming.mjs"
+      "laatsteFout": "browser www.odido.nl/service/bellen-en-i: te weinig tekst na render | browser www.odido.nl/prive/mobiel/buiten: te weini"
     },
     "kpn": {
       "naam": "KPN",
@@ -59,14 +59,80 @@
     "vodafone": {
       "naam": "Vodafone",
       "url": "https://www.vodafone.nl/abonnement/buitenland",
-      "status": "onbekend",
-      "laatsteFout": "browser www.vodafone.nl/abonnement/buite: Cannot find package 'playwright' imported from /tmp/roaming/scrape-roaming.mjs"
+      "status": "ok",
+      "opgehaald": "2026-08-05",
+      "hash": "c36eca74f37fd4e4",
+      "zoneZin": "",
+      "inbundel": [
+        "Turkije",
+        "Verenigde Staten",
+        "Zwitserland",
+        "Marokko",
+        "Suriname",
+        "Canada",
+        "Zuid-Afrika"
+      ],
+      "buitenbundel": [],
+      "landen": {
+        "Turkije": {
+          "oordeel": "inbundel",
+          "tiers": [],
+          "zekerheid": "midden",
+          "zin": "Deze bundels zijn geldig in alle EU-landen, en zelfs in een aantal landen daarbuiten, zoals Turkije, Zwitserland en Albanië."
+        },
+        "Verenigde Staten": {
+          "oordeel": "inbundel",
+          "tiers": [
+            "Unlimited Max kun je da"
+          ],
+          "zekerheid": "hoog",
+          "zin": "Met Unlimited Max kun je daarnaast 25 GB per maand in Canada, Caribisch Nederland, Marokko, Suriname, Verenigde Staten en Zuid-Afrika gebruiken."
+        },
+        "Zwitserland": {
+          "oordeel": "inbundel",
+          "tiers": [],
+          "zekerheid": "midden",
+          "zin": "Deze bundels zijn geldig in alle EU-landen, en zelfs in een aantal landen daarbuiten, zoals Turkije, Zwitserland en Albanië."
+        },
+        "Marokko": {
+          "oordeel": "inbundel",
+          "tiers": [
+            "Unlimited Max kun je da"
+          ],
+          "zekerheid": "hoog",
+          "zin": "Met Unlimited Max kun je daarnaast 25 GB per maand in Canada, Caribisch Nederland, Marokko, Suriname, Verenigde Staten en Zuid-Afrika gebruiken."
+        },
+        "Suriname": {
+          "oordeel": "inbundel",
+          "tiers": [
+            "Unlimited Max kun je da"
+          ],
+          "zekerheid": "hoog",
+          "zin": "Met Unlimited Max kun je daarnaast 25 GB per maand in Canada, Caribisch Nederland, Marokko, Suriname, Verenigde Staten en Zuid-Afrika gebruiken."
+        },
+        "Canada": {
+          "oordeel": "inbundel",
+          "tiers": [
+            "Unlimited Max kun je da"
+          ],
+          "zekerheid": "hoog",
+          "zin": "Met Unlimited Max kun je daarnaast 25 GB per maand in Canada, Caribisch Nederland, Marokko, Suriname, Verenigde Staten en Zuid-Afrika gebruiken."
+        },
+        "Zuid-Afrika": {
+          "oordeel": "inbundel",
+          "tiers": [
+            "Unlimited Max kun je da"
+          ],
+          "zekerheid": "hoog",
+          "zin": "Met Unlimited Max kun je daarnaast 25 GB per maand in Canada, Caribisch Nederland, Marokko, Suriname, Verenigde Staten en Zuid-Afrika gebruiken."
+        }
+      }
     },
     "ben": {
       "naam": "Ben",
       "url": "https://www.ben.nl/klantenservice/bellen-en-internetten-in-het-buitenland",
       "status": "onbekend",
-      "laatsteFout": "browser www.ben.nl/klantenservice/bellen: Cannot find package 'playwright' imported from /tmp/roaming/scrape-roaming.mjs"
+      "laatsteFout": "browser www.ben.nl/klantenservice/bellen: te weinig tekst na render | browser www.ben.nl/buitenland: te weinig tekst na "
     },
     "simyo": {
       "naam": "Simyo",
@@ -193,12 +259,12 @@
       "naam": "Lebara",
       "url": "https://www.lebara.nl/nl/roaming.html",
       "status": "onbekend",
-      "laatsteFout": "browser www.lebara.nl/nl/roaming.html: Cannot find package 'playwright' imported from /tmp/roaming/scrape-roaming.mjs\nDi"
+      "laatsteFout": "browser www.lebara.nl/nl/roaming.html: te weinig tekst na render | browser www.lebara.nl/nl/help/roaming.ht: te weinig t"
     }
   },
   "samenvatting": {
-    "gelukt": 4,
-    "mislukt": 4,
+    "gelukt": 5,
+    "mislukt": 3,
     "gewijzigd": []
   }
 }
