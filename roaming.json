@@ -1,0 +1,328 @@
+{
+  "bijgewerkt": "2026-08-05T17:54:37.658Z",
+  "bron": "scrape-roaming.mjs",
+  "providers": {
+    "odido": {
+      "naam": "Odido",
+      "url": "https://www.deprijsvergelijker.com/pages/bellen-internet-buitenland",
+      "status": "ok",
+      "bronType": "eigen pagina",
+      "opgehaald": "2026-08-05",
+      "hash": "02098cdc43bcd9f5",
+      "zoneZin": "Binnen de EU plus Noorwegen, IJsland en Liechtenstein bel, sms en internet je uit je eigen bundel &mdash; dat heet Roam Like at Home .",
+      "inbundel": [
+        "Turkije",
+        "VS",
+        "Zwitserland",
+        "Verenigd Koninkrijk",
+        "Noorwegen",
+        "IJsland",
+        "Liechtenstein",
+        "Marokko",
+        "Suriname",
+        "Canada",
+        "Zuid-Afrika"
+      ],
+      "buitenbundel": [],
+      "landen": {
+        "Turkije": {
+          "oordeel": "inbundel",
+          "tiers": [
+            "Unlimited Plus",
+            "Snelst",
+            "Premium",
+            "Plus"
+          ],
+          "zekerheid": "hoog",
+          "zin": "Bij Unlimited Plus, Snelst en Premium zitten Turkije, de VS en Zwitserland in je bundel (Zone Buitenland Plus)."
+        },
+        "VS": {
+          "oordeel": "inbundel",
+          "tiers": [
+            "Unlimited Plus",
+            "Snelst",
+            "Premium",
+            "Plus"
+          ],
+          "zekerheid": "hoog",
+          "zin": "Bij Unlimited Plus, Snelst en Premium zitten Turkije, de VS en Zwitserland in je bundel (Zone Buitenland Plus)."
+        },
+        "Zwitserland": {
+          "oordeel": "inbundel",
+          "tiers": [
+            "Unlimited Plus",
+            "Snelst",
+            "Premium",
+            "Plus"
+          ],
+          "zekerheid": "hoog",
+          "zin": "Bij Unlimited Plus, Snelst en Premium zitten Turkije, de VS en Zwitserland in je bundel (Zone Buitenland Plus)."
+        },
+        "Verenigd Koninkrijk": {
+          "oordeel": "inbundel",
+          "tiers": [],
+          "zekerheid": "midden",
+          "zin": "Het Verenigd Koninkrijk valt onder de EU-zone."
+        },
+        "Noorwegen": {
+          "oordeel": "inbundel",
+          "tiers": [],
+          "zekerheid": "midden",
+          "zin": "&#10003; EU, Noorwegen, IJsland & Liechtenstein Bellen, sms'en en internetten uit je bundel, zonder toeslag."
+        },
+        "IJsland": {
+          "oordeel": "inbundel",
+          "tiers": [],
+          "zekerheid": "midden",
+          "zin": "&#10003; EU, Noorwegen, IJsland & Liechtenstein Bellen, sms'en en internetten uit je bundel, zonder toeslag."
+        },
+        "Liechtenstein": {
+          "oordeel": "inbundel",
+          "tiers": [],
+          "zekerheid": "midden",
+          "zin": "&#10003; EU, Noorwegen, IJsland & Liechtenstein Bellen, sms'en en internetten uit je bundel, zonder toeslag."
+        },
+        "Marokko": {
+          "oordeel": "inbundel",
+          "tiers": [
+            "Unlimited Max krijg je"
+          ],
+          "zekerheid": "hoog",
+          "zin": "Met Unlimited Max krijg je 25 GB per maand in Canada, de VS, Marokko, Suriname, Zuid-Afrika en Caribisch Nederland."
+        },
+        "Suriname": {
+          "oordeel": "inbundel",
+          "tiers": [
+            "Unlimited Max krijg je"
+          ],
+          "zekerheid": "hoog",
+          "zin": "Met Unlimited Max krijg je 25 GB per maand in Canada, de VS, Marokko, Suriname, Zuid-Afrika en Caribisch Nederland."
+        },
+        "Canada": {
+          "oordeel": "inbundel",
+          "tiers": [
+            "Unlimited Max krijg je"
+          ],
+          "zekerheid": "hoog",
+          "zin": "Met Unlimited Max krijg je 25 GB per maand in Canada, de VS, Marokko, Suriname, Zuid-Afrika en Caribisch Nederland."
+        },
+        "Zuid-Afrika": {
+          "oordeel": "inbundel",
+          "tiers": [
+            "Unlimited Max krijg je"
+          ],
+          "zekerheid": "hoog",
+          "zin": "Met Unlimited Max krijg je 25 GB per maand in Canada, de VS, Marokko, Suriname, Zuid-Afrika en Caribisch Nederland."
+        }
+      }
+    },
+    "kpn": {
+      "naam": "KPN",
+      "url": "https://www.kpn.com/mobiel-abonnement/bundels/buitenland/binnen-eu",
+      "status": "ok",
+      "bronType": "provider",
+      "opgehaald": "2026-08-05",
+      "hash": "4abbdda2552bc822",
+      "zoneZin": "",
+      "inbundel": [
+        "Zwitserland",
+        "Verenigd Koninkrijk",
+        "Noorwegen",
+        "IJsland",
+        "Oekraïne"
+      ],
+      "buitenbundel": [],
+      "landen": {
+        "Zwitserland": {
+          "oordeel": "inbundel",
+          "tiers": [],
+          "zekerheid": "midden",
+          "zin": "Goed om te weten: IJsland, Noorwegen, Noordzee (Tampnet), Moldavië, Oekraïne, Verenigd Koninkrijk, Zwitserland en de Canarische Eilanden vallen bij KPN ook onder de EU."
+        },
+        "Verenigd Koninkrijk": {
+          "oordeel": "inbundel",
+          "tiers": [],
+          "zekerheid": "midden",
+          "zin": "Goed om te weten: IJsland, Noorwegen, Noordzee (Tampnet), Moldavië, Oekraïne, Verenigd Koninkrijk, Zwitserland en de Canarische Eilanden vallen bij KPN ook onder de EU."
+        },
+        "Noorwegen": {
+          "oordeel": "inbundel",
+          "tiers": [],
+          "zekerheid": "midden",
+          "zin": "Goed om te weten: IJsland, Noorwegen, Noordzee (Tampnet), Moldavië, Oekraïne, Verenigd Koninkrijk, Zwitserland en de Canarische Eilanden vallen bij KPN ook onder de EU."
+        },
+        "IJsland": {
+          "oordeel": "inbundel",
+          "tiers": [],
+          "zekerheid": "midden",
+          "zin": "Goed om te weten: IJsland, Noorwegen, Noordzee (Tampnet), Moldavië, Oekraïne, Verenigd Koninkrijk, Zwitserland en de Canarische Eilanden vallen bij KPN ook onder de EU."
+        },
+        "Oekraïne": {
+          "oordeel": "inbundel",
+          "tiers": [],
+          "zekerheid": "midden",
+          "zin": "Goed om te weten: IJsland, Noorwegen, Noordzee (Tampnet), Moldavië, Oekraïne, Verenigd Koninkrijk, Zwitserland en de Canarische Eilanden vallen bij KPN ook onder de EU."
+        }
+      }
+    },
+    "vodafone": {
+      "naam": "Vodafone",
+      "url": "https://www.vodafone.nl/abonnement/buitenland",
+      "status": "ok",
+      "bronType": "provider",
+      "opgehaald": "2026-08-05",
+      "hash": "b717ac3142334588",
+      "zoneZin": "",
+      "inbundel": [],
+      "buitenbundel": [],
+      "landen": {}
+    },
+    "ben": {
+      "naam": "Ben",
+      "url": "https://www.ben.nl/klantenservice/bellen-en-internetten-in-het-buitenland",
+      "status": "onbekend",
+      "laatsteFout": "browser www.ben.nl/klantenservice/bellen: HTTP 403"
+    },
+    "simyo": {
+      "naam": "Simyo",
+      "url": "https://www.simyo.nl/buitenland",
+      "status": "ok",
+      "bronType": "provider",
+      "opgehaald": "2026-08-05",
+      "hash": "a35d8998a7508952",
+      "zoneZin": "Je betaalt geen extra kosten binnen alle EU-landen, plus Andorra, IJsland, Liechtenstein, Moldavië, Monaco, Noordzee (Tampnet), Noorwegen, Oekraïne, San Marino, Verenigd Koninkrijk en Zwitserland.",
+      "inbundel": [
+        "Zwitserland",
+        "Verenigd Koninkrijk",
+        "Noorwegen",
+        "IJsland",
+        "Liechtenstein",
+        "Andorra",
+        "Monaco",
+        "San Marino",
+        "Oekraïne"
+      ],
+      "buitenbundel": [],
+      "landen": {
+        "Zwitserland": {
+          "oordeel": "inbundel",
+          "tiers": [],
+          "zekerheid": "hoog",
+          "zin": "Je betaalt geen extra kosten binnen alle EU-landen, plus Andorra, IJsland, Liechtenstein, Moldavië, Monaco, Noordzee (Tampnet), Noorwegen, Oekraïne, San Marino, Verenigd Koninkrijk en Zwitserland."
+        },
+        "Verenigd Koninkrijk": {
+          "oordeel": "inbundel",
+          "tiers": [],
+          "zekerheid": "hoog",
+          "zin": "Je betaalt geen extra kosten binnen alle EU-landen, plus Andorra, IJsland, Liechtenstein, Moldavië, Monaco, Noordzee (Tampnet), Noorwegen, Oekraïne, San Marino, Verenigd Koninkrijk en Zwitserland."
+        },
+        "Noorwegen": {
+          "oordeel": "inbundel",
+          "tiers": [],
+          "zekerheid": "hoog",
+          "zin": "Je betaalt geen extra kosten binnen alle EU-landen, plus Andorra, IJsland, Liechtenstein, Moldavië, Monaco, Noordzee (Tampnet), Noorwegen, Oekraïne, San Marino, Verenigd Koninkrijk en Zwitserland."
+        },
+        "IJsland": {
+          "oordeel": "inbundel",
+          "tiers": [],
+          "zekerheid": "hoog",
+          "zin": "Je betaalt geen extra kosten binnen alle EU-landen, plus Andorra, IJsland, Liechtenstein, Moldavië, Monaco, Noordzee (Tampnet), Noorwegen, Oekraïne, San Marino, Verenigd Koninkrijk en Zwitserland."
+        },
+        "Liechtenstein": {
+          "oordeel": "inbundel",
+          "tiers": [],
+          "zekerheid": "hoog",
+          "zin": "Je betaalt geen extra kosten binnen alle EU-landen, plus Andorra, IJsland, Liechtenstein, Moldavië, Monaco, Noordzee (Tampnet), Noorwegen, Oekraïne, San Marino, Verenigd Koninkrijk en Zwitserland."
+        },
+        "Andorra": {
+          "oordeel": "inbundel",
+          "tiers": [],
+          "zekerheid": "hoog",
+          "zin": "Je betaalt geen extra kosten binnen alle EU-landen, plus Andorra, IJsland, Liechtenstein, Moldavië, Monaco, Noordzee (Tampnet), Noorwegen, Oekraïne, San Marino, Verenigd Koninkrijk en Zwitserland."
+        },
+        "Monaco": {
+          "oordeel": "inbundel",
+          "tiers": [],
+          "zekerheid": "hoog",
+          "zin": "Je betaalt geen extra kosten binnen alle EU-landen, plus Andorra, IJsland, Liechtenstein, Moldavië, Monaco, Noordzee (Tampnet), Noorwegen, Oekraïne, San Marino, Verenigd Koninkrijk en Zwitserland."
+        },
+        "San Marino": {
+          "oordeel": "inbundel",
+          "tiers": [],
+          "zekerheid": "hoog",
+          "zin": "Je betaalt geen extra kosten binnen alle EU-landen, plus Andorra, IJsland, Liechtenstein, Moldavië, Monaco, Noordzee (Tampnet), Noorwegen, Oekraïne, San Marino, Verenigd Koninkrijk en Zwitserland."
+        },
+        "Oekraïne": {
+          "oordeel": "inbundel",
+          "tiers": [],
+          "zekerheid": "hoog",
+          "zin": "Je betaalt geen extra kosten binnen alle EU-landen, plus Andorra, IJsland, Liechtenstein, Moldavië, Monaco, Noordzee (Tampnet), Noorwegen, Oekraïne, San Marino, Verenigd Koninkrijk en Zwitserland."
+        }
+      }
+    },
+    "youfone": {
+      "naam": "Youfone",
+      "url": "https://www.youfone.nl/buitenland",
+      "status": "ok",
+      "bronType": "provider",
+      "opgehaald": "2026-08-05",
+      "hash": "c309a8b8bdb6fe24",
+      "zoneZin": "",
+      "inbundel": [],
+      "buitenbundel": [],
+      "landen": {}
+    },
+    "hollandsnieuwe": {
+      "naam": "hollandsnieuwe",
+      "url": "https://www.hollandsnieuwe.nl/buitenland",
+      "status": "ok",
+      "bronType": "provider",
+      "opgehaald": "2026-08-05",
+      "hash": "d7acd1e235a2eed7",
+      "zoneZin": "Bij het gebruik van gereguleerde roamingdiensten binnen de Europese Unie (inclusief IJsland, Liechtenstein en Noorwegen) kan de kwaliteit van de dienstverlening in een ander land verschillen van de kwaliteit van de Vodafone dienstverlening in Nederland.",
+      "inbundel": [
+        "Noorwegen",
+        "IJsland",
+        "Liechtenstein"
+      ],
+      "buitenbundel": [],
+      "landen": {
+        "Noorwegen": {
+          "oordeel": "inbundel",
+          "tiers": [],
+          "zekerheid": "hoog",
+          "zin": "Bij het gebruik van gereguleerde roamingdiensten binnen de Europese Unie (inclusief IJsland, Liechtenstein en Noorwegen) kan de kwaliteit van de dienstverlening in een ander land verschillen van de kwaliteit van de Vodafone dienstverlening "
+        },
+        "IJsland": {
+          "oordeel": "inbundel",
+          "tiers": [],
+          "zekerheid": "hoog",
+          "zin": "Bij het gebruik van gereguleerde roamingdiensten binnen de Europese Unie (inclusief IJsland, Liechtenstein en Noorwegen) kan de kwaliteit van de dienstverlening in een ander land verschillen van de kwaliteit van de Vodafone dienstverlening "
+        },
+        "Liechtenstein": {
+          "oordeel": "inbundel",
+          "tiers": [],
+          "zekerheid": "hoog",
+          "zin": "Bij het gebruik van gereguleerde roamingdiensten binnen de Europese Unie (inclusief IJsland, Liechtenstein en Noorwegen) kan de kwaliteit van de dienstverlening in een ander land verschillen van de kwaliteit van de Vodafone dienstverlening "
+        }
+      }
+    },
+    "lebara": {
+      "naam": "Lebara",
+      "url": "https://www.lebara.nl/nl/roaming.html",
+      "status": "ok",
+      "bronType": "provider",
+      "opgehaald": "2026-08-05",
+      "hash": "31eca4700fd5ba10",
+      "zoneZin": "",
+      "inbundel": [],
+      "buitenbundel": [],
+      "landen": {}
+    }
+  },
+  "samenvatting": {
+    "gelukt": 7,
+    "mislukt": 1,
+    "gewijzigd": []
+  }
+}
