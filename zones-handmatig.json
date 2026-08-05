@@ -1,0 +1,91 @@
+{
+  "_leesmij": "Handmatig onderhouden zonelijsten. Dit is de bron van waarheid voor het landfilter; roaming.json dient alleen om te signaleren DAT er iets veranderd is. Controleer bij zo'n signaal de provider en werk dit bestand bij.",
+  "_regel": "Staat een land niet in euZone en niet in uitzonderingen, dan is het NIET gedekt door een Nederlands abonnement. Toon dan de eSIM en de landengids.",
+  "bijgewerkt": "2026-08-05",
+  "euBasis": [
+    "Belgie","Duitsland","Frankrijk","Spanje","Italie","Portugal","Griekenland","Oostenrijk",
+    "Polen","Tsjechie","Kroatie","Hongarije","Ierland","Denemarken","Zweden","Finland",
+    "Luxemburg","Malta","Cyprus","Bulgarije","Roemenie","Slovenie","Slowakije",
+    "Estland","Letland","Litouwen"
+  ],
+  "providers": {
+    "kpn": {
+      "naam": "KPN",
+      "euExtra": ["IJsland","Noorwegen","Moldavie","Oekraine","Verenigd Koninkrijk","Zwitserland"],
+      "notitie": "Ook de Noordzee via Tampnet en de Canarische Eilanden. Turkije, Marokko en Suriname vallen er expliciet NIET onder.",
+      "uitzonderingen": [],
+      "buitenZone": "Buitenlandbundel nodig, anders 2,50 euro per MB.",
+      "bron": "kpn.com/mobiel-abonnement/bundels/buitenland/binnen-eu",
+      "peildatum": "2026-08-05"
+    },
+    "vodafone": {
+      "naam": "Vodafone",
+      "euExtra": ["IJsland","Liechtenstein","Moldavie","Monaco","Noorwegen","Oekraine","San Marino","Andorra","Albanie","Turkije","Verenigd Koninkrijk","Zwitserland"],
+      "notitie": "EU-databundel per abonnement: Unlimited Start 50 GB, Plus 75 GB, Max 100 GB.",
+      "uitzonderingen": [
+        { "landen": ["Canada","Bonaire","Curacao","Aruba","Sint Maarten","Marokko","Suriname","Verenigde Staten","Zuid-Afrika"],
+          "tiers": ["Unlimited Max"], "detail": "25 GB per maand" }
+      ],
+      "buitenZone": "Alles-in-1 Wereld dagbundel of buitenbundeltarief.",
+      "bron": "vodafone.nl/abonnement/buitenland",
+      "peildatum": "2026-08-05"
+    },
+    "odido": {
+      "naam": "Odido",
+      "euExtra": ["IJsland","Liechtenstein","Noorwegen","Verenigd Koninkrijk"],
+      "notitie": "Zone Buitenland Plus geldt alleen bij de hogere Unlimited-tiers.",
+      "uitzonderingen": [
+        { "landen": ["Turkije","Verenigde Staten","Zwitserland"],
+          "tiers": ["Unlimited Plus","Unlimited Snelst","Unlimited Premium"], "detail": "Zone Buitenland Plus" }
+      ],
+      "buitenZone": "Internet Op Reis-pas nodig.",
+      "bron": "eigen buitenlandpagina",
+      "peildatum": "2026-06"
+    },
+    "simyo": {
+      "naam": "Simyo",
+      "euExtra": ["Andorra","IJsland","Liechtenstein","Moldavie","Monaco","Noorwegen","Oekraine","San Marino","Verenigd Koninkrijk","Zwitserland"],
+      "notitie": "Ook de Noordzee via Tampnet.",
+      "uitzonderingen": [],
+      "buitenZone": "Buitenlandbundel, anders 5 euro per MB.",
+      "bron": "simyo.nl/buitenland",
+      "peildatum": "2026-08-05"
+    },
+    "hollandsnieuwe": {
+      "naam": "hollandsnieuwe",
+      "euExtra": ["IJsland","Liechtenstein","Noorwegen"],
+      "notitie": "",
+      "uitzonderingen": [],
+      "buitenZone": "Hogere tarieven buiten de EU.",
+      "bron": "hollandsnieuwe.nl/buitenland",
+      "peildatum": "2026-08-05"
+    },
+    "youfone": {
+      "naam": "Youfone",
+      "euExtra": ["IJsland","Liechtenstein","Noorwegen"],
+      "notitie": "Nog te verifieren welke landen Youfone extra meerekent.",
+      "uitzonderingen": [],
+      "buitenZone": "Buitenlandbundel nodig.",
+      "bron": "youfone.nl/buitenland",
+      "peildatum": "2026-08-05"
+    },
+    "ben": {
+      "naam": "Ben",
+      "euExtra": [],
+      "notitie": "ONBEKEND. Ben blokkeert elke automatische browser met een 403; nog niet handmatig nagekeken.",
+      "uitzonderingen": [],
+      "buitenZone": "",
+      "bron": "",
+      "peildatum": ""
+    },
+    "lebara": {
+      "naam": "Lebara",
+      "euExtra": [],
+      "notitie": "Nog te verifieren.",
+      "uitzonderingen": [],
+      "buitenZone": "Wereldbundel nodig.",
+      "bron": "lebara.nl/nl/roaming.html",
+      "peildatum": "2026-08-05"
+    }
+  }
+}
