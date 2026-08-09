@@ -1,5 +1,5 @@
 {
-  "bijgewerkt": "2026-08-08T05:11:03.443Z",
+  "bijgewerkt": "2026-08-09T05:19:38.823Z",
   "bron": "scrape-roaming.mjs",
   "providers": {
     "odido": {
@@ -7,7 +7,7 @@
       "url": "https://www.deprijsvergelijker.com/pages/bellen-internet-buitenland",
       "status": "ok",
       "bronType": "eigen pagina",
-      "opgehaald": "2026-08-08",
+      "opgehaald": "2026-08-09",
       "hash": "cb6a840ff0c1380e",
       "zoneZin": "&#127481;&#127479; Turkije* &#127482;&#127480; VS* &#127464;&#127469; Zwitserland* &#127474;&#127462; Marokko &#127481;&#127469; Thailand Vergelijk Odido sim only &rsaquo; KPN in het buitenland Ruime EU-dekking &middot; coulant bij lang verblijf KPN (en dochters Simyo en Youfone) rekent sinds november 2025 ook de Noordzee tot de EU-zone.",
       "zekerheid": "laag — handmatig controleren",
@@ -67,7 +67,7 @@
       "url": "https://www.kpn.com/mobiel-abonnement/bundels/buitenland/binnen-eu",
       "status": "ok",
       "bronType": "provider",
-      "opgehaald": "2026-08-08",
+      "opgehaald": "2026-08-09",
       "hash": "4abbdda2552bc822",
       "zoneZin": "Datagebruik bij roaming aanpassen Valt Turkije ook binnen de EU bij KPN?",
       "zekerheid": "laag — handmatig controleren",
@@ -112,7 +112,7 @@
       "url": "https://www.vodafone.nl/abonnement/buitenland",
       "status": "ok",
       "bronType": "provider",
-      "opgehaald": "2026-08-08",
+      "opgehaald": "2026-08-09",
       "hash": "35693bf7170ec8df",
       "zoneZin": "",
       "zekerheid": "laag — handmatig controleren",
@@ -130,7 +130,7 @@
       "url": "https://www.simyo.nl/buitenland",
       "status": "ok",
       "bronType": "provider",
-      "opgehaald": "2026-08-08",
+      "opgehaald": "2026-08-09",
       "hash": "a35d8998a7508952",
       "zoneZin": "Argentinië Cuba Gabon Guatemala Guyana Kenia Malediven Mexico Peru Rusland Sri Lanka Togo Venezuela Zimbabwe Verkeer via satelliet (het Noordzeegebied valt wel binnen zone 1) Heeft dit je geholpen?",
       "zekerheid": "laag — handmatig controleren",
@@ -149,7 +149,7 @@
       "url": "https://www.youfone.nl/buitenland",
       "status": "ok",
       "bronType": "provider",
-      "opgehaald": "2026-08-08",
+      "opgehaald": "2026-08-09",
       "hash": "c309a8b8bdb6fe24",
       "zoneZin": "",
       "zekerheid": "laag — handmatig controleren",
@@ -161,7 +161,7 @@
       "url": "https://www.hollandsnieuwe.nl/buitenland",
       "status": "ok",
       "bronType": "provider",
-      "opgehaald": "2026-08-08",
+      "opgehaald": "2026-08-09",
       "hash": "d7acd1e235a2eed7",
       "zoneZin": "Bij het gebruik van gereguleerde roamingdiensten binnen de Europese Unie (inclusief IJsland, Liechtenstein en Noorwegen) kan de kwaliteit van de dienstverlening in een ander land verschillen van de kwaliteit van de Vodafone dienstverlening in Nederland.",
       "zekerheid": "laag — handmatig controleren",
@@ -357,8 +357,6 @@
   "samenvatting": {
     "gelukt": 6,
     "mislukt": 1,
-    "gewijzigd": [
-      "Odido"
-    ]
+    "gewijzigd": []
   }
 }
